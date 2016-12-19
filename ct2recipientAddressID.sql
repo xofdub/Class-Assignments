@@ -1,0 +1,26 @@
+USE communityThrive2DB
+GO
+
+
+GO
+
+
+GO
+
+CREATE TABLE ct2RecipientAddress(
+	recipientAddressID INT IDENTITY(1,1) NOT NULL,
+	recipientID INT NOT NULL,
+	streetName NVARCHAR(100) NULL,
+	cityName NVARCHAR(50) NULL,
+	stateName NVARCHAR(50) NULL,
+	zipcode INT NULL
+	
+PRIMARY KEY CLUSTERED 
+(
+	recipientAddressID ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
